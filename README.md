@@ -1,12 +1,12 @@
 # AI
 Various experiments with Artificial Intelligence. 
 
-
+____________________
 I have been asked why I didn't teach my earlier learning AI how to play the various games I gave them. 
 That is not learning. That is memory. 
 Furthermore, my AI can be used to study things that I cannot calculate by the very nature of my unfortunately limited human mind. 
 
-
+____________________
 Most AI will PREDICT several moves in advance and CALCULATE the VALUE of each game state. 
 This is a very limited approach. Prediction can only go so far, since RAM usage grows exponentially with depth. 
 Calculating the value so ridiculously often is horrifically slow. And, to top it off, a human had to tell the computer how to rate the value. 
@@ -23,7 +23,7 @@ So, 2 * 9! (725,760) ending game states since player order matters (odd-number g
 But we need every playable state, which is 623,530. We need to go through 9 of those to reach an end state. And we can reliably learn only one thing per loss. 
 \\UNFINISHED//
 
-
+____________________
 Anyway...
 There are many ways to learn, but the simplest and most effective way is to not repeat mistakes. 
 This approach is, of course, far from efficient. Also, rather useless in games based primarily on chance. 
