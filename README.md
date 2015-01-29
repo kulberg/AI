@@ -21,7 +21,7 @@ This approach is, of course, far from efficient and requires billions of cycles 
 Let's take Tic-Tac-Toe. There is 1 starting game state, then 9, then 9 * 8, then 9 * 8 * 7, etc. 
 So, 2 * 9! (725,760) ending game states since player order matters (odd-number grid). We can chop half, however, with clever code. So 9! is our final answer. 
 But we need every playable state, which is 623,530. We need to go through 9 of those to reach an end state. And we can reliably learn only one thing per loss. 
-\\UNFINISHED//
+[[UNFINISHED]]
 
 ____________________
 Anyway...
