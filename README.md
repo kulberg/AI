@@ -1,5 +1,6 @@
 # AI
-Various experiments with Artificial Intelligence. 
+Various experiments with Artificial Intelligence.  
+Comments and suggestions are appreciated. 
 
 ____________________
 I have been asked why I didn't teach my earlier learning AI how to play the various games I gave them.  
@@ -32,3 +33,5 @@ This allows much greater potential for modularity. I could, potentially, make a 
 Or I could make another for backgammon. Chess.  
 
 I could even make a game out of writing learning AI. 
+
+All of these could potentially use the same code. This is my first attempt at this and will expanded and revised at my discretion. 
