@@ -34,4 +34,4 @@ Or I could make another for backgammon. Chess.
 
 I could even make a game out of writing learning AI. 
 
-All of these could potentially use the same code. This is my first attempt at this and will expanded and revised at my discretion. 
+All of these could potentially use the same code. This is my first attempt at this and will be expanded and revised at my discretion. 
