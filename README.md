@@ -2,7 +2,7 @@
 Various experiments with Artificial Intelligence. 
 
 ____________________
-I have been asked why I didn't teach my earlier learning AI how to play the various games I gave them. \n
+I have been asked why I didn't teach my earlier learning AI how to play the various games I gave them. 
 That is not learning. That is memory. 
 Furthermore, my AI can be used to study things that I cannot calculate by the very nature of my unfortunately limited human mind. 
 
