@@ -1,3 +1,20 @@
+"""
+Copyright 2015 Kyle Ulberg
+    Contact: kulberg.tech@gmail.com
+    I offer this software with no warranty. 
+    You, the reader, have full permissions to use, redistribute and edit as you please. 
+    Conditions: Credit me as the original author with a link to my source, mention if it was modified, 
+        and any redistribution must maintain my copyright and it's restrictions and must be free. 
+        Also, shoot me an email with the appropraite link if you put this anywhere public, as a courtesy. 
+
+A preliminary test. Inspiration for my new version. Also, much less efficient. 
+
+Comments later. 
+
+Exactly 26 losses for the AI before playing a perfect game every time. 
+Other player always goes first and is random. 
+"""
+
 import random
 
 moves_perfect = [0, 0, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 0]
