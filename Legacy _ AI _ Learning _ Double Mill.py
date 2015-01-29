@@ -1,3 +1,20 @@
+"""
+Copyright 2015 Kyle Ulberg
+    Contact: kulberg.tech@gmail.com
+    I offer this software with no warranty. 
+    You, the reader, have full permissions to use, redistribute and edit as you please. 
+    Conditions: Credit me as the original author with a link to my source, mention if it was modified, 
+        and any redistribution must maintain my copyright and it's restrictions and must be free. 
+        Also, shoot me an email with the appropraite link if you put this anywhere public, as a courtesy. 
+
+
+Comments later. 
+Not actually sure if this one works. Setting it up on my server soon to let it run for a couple days.
+
+This is the game:
+https://play.google.com/store/apps/details?id=com.plusonelabs.doublemill&hl=en
+"""
+
 import time
 import random
 
