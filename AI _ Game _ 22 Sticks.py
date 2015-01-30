@@ -57,7 +57,7 @@ class game_22sticks:
     def turn(self, move):
         self.sticks -= move
         if self.sticks < 1:
-            return 1
+            return self.player
         else:
             self.player = 3 - self.player
             return 0

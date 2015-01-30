@@ -17,12 +17,14 @@ Serves to communicate between the above mentioned modules.
 
 # Import modules
 # In future versions, game will be variable. 
+import time
 AI_class = __import__("AI _ Learning _ Generic").AI
-Game_22sticks = __import__("AI _ Game _ 22 Sticks").game_22sticks
+#Game_class = __import__("AI _ Game _ 22 Sticks").game_22sticks
+Game_class = __import__("AI _ Game _ TicTacToe").game_tictactoe
 
 # instantiate objects
 # In future versions, instantiation will be strictly dynamic. 
-game = Game_22sticks()
+game = Game_class()
 AI1 = AI_class()
 AI2 = AI_class()
 
@@ -52,6 +54,7 @@ def print_intersect(p1, p2):
 # The driving force. Primary communicator between AI and game. 
 # n = number of games
 def run(n):
+    draws = 0
     i = 0
     while i < n:
         # Keeping a player variable in game lets you compress this function considerably. 
@@ -66,21 +69,30 @@ def run(n):
                 game.game_state() yields the game state. 
             player.turn(state, valid) returns random (- previous mistakes) from 0 -> valid. Let's call that x...
             ...so, moves[x] gives the chosen move from those valid...
-            ...which is passed into game.turn(moves[x]), returning 0 unless the move resulted in the active player losing. 
+            ...which is passed into game.turn(moves[x]), returning 0 unless the move resulted in a player losing. 
         """
-        # My sample game is set to return 1 on a loss, after the losing player's turn. 
-        # Make sure to change this if your game ends with the active player in the winning state. 
-        if game.turn(moves[player.turn(game.game_state(), len(moves))]) == 1:
+        # My sample game is set to return the losing player. 
+        # Otherwise, -1 for special case (draw, etc.), else 0 (continue game) 
+        res = game.turn(moves[player.turn(game.game_state(), len(moves))])
+        if res == -1:
+            reset()
+            i += 1
+            draws += 1
+        elif not res == 0:
             # player.turn(0, 0) can ONLY return -1 for the special end case mentioned in new_memory() in "AI _ Learning _ Generic"
             # I do this instead of directly calling AI_player.new_memory() for easier modification of the losing case. 
+            player = eval('AI' + str(res))
             if player.turn(0, 0) == -1:
-                return i
-            game.__init__()
-            # Wipe temps when a game ends. 
-            # In future versions, this will be dynamic. 
-            AI1.last_state = ''
-            AI1.last_move = ''
-            AI2.last_state = ''
-            AI2.last_move = ''
+                return i, draws
+            reset()
             i += 1
-    
+    return draws
+
+def reset():
+    game.__init__()
+    # Wipe temps when a game ends. 
+    # In future versions, this will be dynamic. 
+    AI1.last_state = ''
+    AI1.last_move = ''
+    AI2.last_state = ''
+    AI2.last_move = ''
