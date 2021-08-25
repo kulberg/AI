@@ -2,6 +2,10 @@
 Various experiments with Artificial Intelligence.  
 Comments and suggestions are appreciated. 
 
+THIS REPOSITORY IS ANCIENT
+NOT representative of my current work
+I haven't decided what I want to do with this old stuff, so here it stays
+
 ____________________
 I have been asked why I didn't teach my earlier learning AI how to play the various games I gave them.  
 That is not learning. That is memory.  
